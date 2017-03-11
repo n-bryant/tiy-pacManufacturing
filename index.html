@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset='UTF-8'>
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title>Pac Manufacturing - Ghost Generator</title>
+        <!-- <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> -->
+        <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
+        <link rel="stylesheet" href="styles/app.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <aside>
+                <h1>Pac <span>Manufacturing</span></h1>
+                <h2>Ghost Generator</h2>
+                <form class="create-form" autocomplete="off">
+                    <label for="ghost-name">Name</label>
+                    <input type="text" id="ghost-name" required>
+                    <label for="ghost-color">Color</label>
+                    <input type="color" id="ghost-color">
+                    <label for="ghost-primary">Primary Action (Load)</label>
+                    <select id="ghost-primary" required>
+                  <option value=''>-- Select --</option>
+                  <option value="blink">Blink</option>
+                  <option value="chase">Chase</option>
+                  <option value="float">Float</option>
+                  <option value="lookout">Lookout</option>
+                  <option value="poof">Poof</option>
+                </select>
+                    <label for="ghost-secondary">Secondary Action (Click)</label>
+                    <select id="ghost-secondary" required>
+                  <option value=''>-- Select --</option>
+                  <option value="blink">Blink</option>
+                  <option value="chase">Chase</option>
+                  <option value="float">Float</option>
+                  <option value="lookout">Lookout</option>
+                  <option value="poof">Poof</option>
+                </select>
+                    <input type="submit" value="Build">
+                </form>
+            </aside>
+            <main class="main-content">
+                <section class="all-ghosts-container"></section>
+                <section class="empty-container">
+                    <img src="http://danyuschick.com/codepen/pacman/ghost.png" class="noghosts" alt="No Ghosts!">
+                    <p class="totesawk">Well, this is awkward. You haven't built any ghosts yet.</p>
+                </section>
+            </main>
+        </div>
+        <script src="js/app.js"></script>
+    </body>
+
+</html>

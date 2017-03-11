@@ -1,0 +1,52 @@
+.ghost-container {
+    float: left;
+    margin: 25px;
+
+    .ghost {
+        background: url("http://www.danyuschick.com/codepen/pacman/pacman-weyes-grey.png") no-repeat;
+        background-size: contain;
+        cursor: pointer;
+        height: 75px;
+        left: 0;
+        margin: 0 auto;
+        outline: 1px solid transparent;
+        opacity: 1;
+        position: relative;
+        top: 0;
+        transition: all 2s ease;
+        transform-origin: center;
+        transform: scale(1);
+        width: 75px;
+
+        &.float {
+            animation: float 2s ease-in-out;
+        }
+
+        &.chase {
+            animation: chase 5s ease-in-out;
+        }
+
+        &.lookout {
+            animation: lookout 1.5s ease;
+        }
+
+        &.blink {
+            animation: blink 5s linear;
+        }
+
+        &.poof {
+            animation: poof 5s ease-in-out;
+        }
+    }
+
+    p {
+        margin: 2px 0;
+        text-align: center;
+
+        &:first-of-type {
+            font-weight: bold;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+    }
+}

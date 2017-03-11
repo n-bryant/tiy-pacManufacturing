@@ -1,0 +1,87 @@
+@keyframes float {
+    25% {
+        top: -35px;
+    }
+
+    50% {
+        top: -10px;
+    }
+
+    75% {
+        top: -25px;
+    }
+}
+@keyframes chase {
+    50% {
+        left: -80vw;
+    }
+
+    50.001% {
+        left: 80vw;
+    }
+}
+@keyframes lookout {
+    15% {
+        transform: rotateY(180deg);
+    }
+
+    25% {
+        transform: rotateY(180deg) rotate(20deg);
+    }
+
+    35% {
+        transform: rotateY(180deg) rotate(10deg);
+    }
+
+    50%,
+    90% {
+        transform: rotateY(180deg) rotate(0deg);
+    }
+}
+@keyframes blink {
+    0%,
+    80%,
+    85%,
+    92%,
+    97%,
+    99% {
+        background-color: #2800FF;
+    }
+
+    100%,
+    81%,
+    88%,
+    95%,
+    98% {
+        background-color: initial;
+    }
+}
+@keyframes poof {
+    10% {
+        transform: scale(1.25);
+        opacity: 1;
+    }
+
+    15%,
+    80% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    85% {
+        transform: scale(1.25);
+        opacity: 1;
+    }
+
+    90% {
+        transform: scale(.9);
+    }
+
+    95% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

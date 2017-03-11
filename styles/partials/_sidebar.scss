@@ -1,0 +1,40 @@
+aside {
+    border-right: 1px solid #cacaca;
+    float: left;
+    height: 100%;
+    padding: $vspace $hspace;
+    width: 20%;
+
+    @include tablet {
+      width: 30%;
+    }
+
+    h1 {
+        background: url("http://vignette3.wikia.nocookie.net/pacman/images/e/e6/Pac-man_(Official_Image).png/revision/latest?cb=20150728024352") no-repeat;
+        background-position: 0 calc(50% - 5px);
+        background-size: 33%;
+        border-bottom: 1px solid $redberry;
+        font: 5vw/5.25vw #{$raleway};
+        margin-bottom: $vspace;
+        padding-bottom: $vspace;
+        text-align: right;
+        text-transform: uppercase;
+
+        @include tablet {
+          background-size: 26%;
+        }
+
+        span {
+            display: block;
+            font: 1.05vw/1.05vw #{$lato};
+        }
+    }
+
+    h2 {
+        background: $mineshaft;
+        color: #eee;
+        font: 1.45vw/3vw #{$lato};
+        text-align: center;
+        text-transform: uppercase;
+    }
+}

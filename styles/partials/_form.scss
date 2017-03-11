@@ -1,0 +1,44 @@
+form {
+  margin: $vspace 0;
+
+  label, input[type=text], select {
+    display: block;
+  }
+
+  label {
+    padding: $vspace/2 0;
+  }
+
+  input, select, option {
+    width: 100%;
+  }
+
+  select {
+    font-size: 15px;
+  }
+
+  input[type=text] {
+    font: 15px/20px #{$lato};
+    padding: $hspace/2;
+  }
+
+  input[type=submit] {
+    background: $redberry;
+    border: 0;
+    border-radius: 50%;
+    color: #eee;
+    cursor: pointer;
+    display: block;
+    font: 18px/75px #{$lato};
+    height: 75px;
+    margin: $vspace auto;
+    text-align: center;
+    text-transform: uppercase;
+    transition: background .5s ease;
+    width: 75px;
+
+    &:hover {
+      background: lighten($redberry, 5%);
+    }
+  }
+}

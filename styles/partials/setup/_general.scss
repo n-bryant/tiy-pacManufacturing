@@ -1,0 +1,35 @@
+body {
+    background: url("../images/bg.png") $mineshaft;
+    color: $mineshaft;
+    font: 16px/20px #{$raleway};
+}
+
+.container {
+    align-items: top;
+    background: #eee;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+}
+
+.empty-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .noghosts {
+        height: auto;
+        margin: $vspace 0;
+        opacity: 0.2;
+        width: 100px;
+    }
+}
+
+.is-hidden {
+    display: none;
+}
